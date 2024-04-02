@@ -21,7 +21,7 @@
                     <td>{{$post->title}}</td>
                     <td>{{$post->content}}</td>
                     <td>{{$post->slug}}</td>
-                    <td><a href="{{route('admin.posts.show', $post)}}" class="text-success"><i class="fa-solid fa-eye"></i></a></td>
+                    <td><a href="{{route('admin.posts.show', $post)}}" class="text-info"><i class="fa-solid fa-eye"></i></a></td>
                     <td><a href="#" class="text-danger"><i class="fa-solid fa-trash"></i></a></td>
                 </tr>
                 @empty
