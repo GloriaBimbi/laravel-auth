@@ -33,7 +33,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $post = new Post;
+        $post->fill($data);
+        $post->save();
+        return redirect()->route('pastas.show', $post);
     }
 
     /**
@@ -53,7 +57,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        
     }
 
     /**
